@@ -1,4 +1,4 @@
-package Main;
+package Main.generative;
 
 public class WomanFactory implements HumanFactory {
     @Override

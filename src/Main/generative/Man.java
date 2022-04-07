@@ -1,18 +1,18 @@
-package Main;
+package Main.generative;
 
-public class Woman implements Human{
+public class Man implements Human{
 
     private int id;
     private String name;
 
-    public Woman() {
-        this.id = 1;
-        this.name = "Sharli";
-    }
-
-    public Woman(int id, String name) {
+    public Man(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Man() {
+        this.id = 1;
+        this.name = "bob";
     }
 
     public int getId() {
@@ -32,13 +32,13 @@ public class Woman implements Human{
     }
 
     public Object copy() {
-        Woman copy = new Woman(id,name);
+        Man copy = new Man(id,name);
         return copy;
     }
 
     @Override
     public String toString() {
-        return "Woman{" +
+        return "Man{" +
                 "id=" + id +
                 ", Name='" + name + '\'' +
                 '}';
